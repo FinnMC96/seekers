@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Univers', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.1px;
+}
+
+.page {
+  padding: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  position: absolute;
+  height: 100%;
+}
+
+.intro {
+  padding-right: 40px;
+  text-indent: -11px;
+  flex-basis: calc(100% / 3);
+}
+
+.book {
+  flex-basis: calc(100% / 3);
+  position: relative;
+}
+.book img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons {
+  flex-basis: calc(100% / 3);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.button {
+  flex-basis: calc(100% / 3);
+  text-align: center;
+  align-self: center;
+  transition: all ease .3s;
+}
+
+.button img {
+  max-width: 100%;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.placeholder {
+  background: red;
+  width: 50%;
+  height: 60px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  opacity: 0;
+}
